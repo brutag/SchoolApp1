@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Physical Simulator App</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        <script src="scripts/jquery-1.11.3.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+        <script src="scripts/ProjectilApp.js"></script>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html" rel="external">Information</a>
+                    </li>
+                    <li>
+                        <a href="calcutations.html" class="ui-btn-active ui-state-persist" rel="external">Interface</a>
+                    </li>                    
+                </ul>                                    
+            </div>
+            <div data-role="main" class="ui-content">
+                <label for="angle">Angle:</label>
+                <input type="range" name="angle" id="angle" min="0" max="90" placeholder="In degrees">
+                <label for="velocity">Velocity:</label> 
+                <input type="range" name="velocity" id="velocity" min="0" max="999" placeholder="In meters/second">
+                <br>
+                <button onclick="display();">Display</button>
+                <br/>
+                <table id="data">
+                    <tr>
+                        <td>
+                            Angle Entered:               
+                        </td>
+                        <td id="angleDisplay">
+                            0
+                        </td>
+                        <td>
+                           degrees 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Velocity Entered:               
+                        </td>
+                        <td id="velocityDisplay">
+                            0
+                        </td>
+                        <td>
+                           meters/second 
+                        </td>
+                    </tr>                    
+                </table>
+            </div>
+            <div data-role="footer">
+                <small>Cross-platform moble app demo</small>
+            </div>
+        </div>
+    </body>
+</html>
